@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define the character set  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sameer Amjad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        * {
+            z-index: 0;
+            font-style: normal;
+            margin: 1rem;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: bisque;
+            transition: ease-in-out;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .navigation {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        background-color: #240090;
+        border: 1px solid #240090;
+        border-radius: 5px;
+        }
+        .navigation a {
+            color: #fff; /* Set text color to white */
+            text-decoration: none; /* Remove underline */
+            padding: 10px 20px; /* Add padding to increase clickable area */
+            transition: color 0.3s ease; /* Smooth transition for color change */
+        }
+
+        .navigation a:hover {
+            color: bisque; /* Change text color on hover */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .card {
+            width: 300px;
+            border: 2px solid #240090;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 0 auto;
+            padding-right: 10px; /* Add padding to the right side */
+            padding-left: 5px;
+        }
+        .card img {
+            width: calc(100% + 10px); /* Adjust width to account for padding */
+            height: auto;
+            border-radius: 15px; /* Rounded on both sides */
+            margin-right: -18px; /* Offset negative margin for padding */
+            margin-left: -10px; /* Offset negative margin for padding */
+        }
+        .card figcaption {
+            padding: 15px;
+            background-color: #240090;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 15px 15px 15px 15px;
+        }
+    </style>
+    <div style="margin-top: 1px;">
+        <nav>
+            <ul class="navigation">
+    
+                <!-- Link some other pages here -->
+                <!--
+            Suggestion: All text inside a HTML element should be lowercase to make it easier to read.
+        -->
+                <li class="active"><a href="home.html">Home</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="imageGallery.html">Image Gallery</a></li>
+                <li><a href="skills.html">Personal Skills</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+
+        <!-- 
+        Despite the addition of new
+        elements that justifably
+        captures a lot of DIV's territory,
+        you can still use them.
+     
+        The best practice is to use
+        DIVs when there is no other
+        more semantically appropiate
+        element that suits your
+        purpoe.
+    -->
+
+        <header>
+            <hgroup>
+                <h1 style="margin-top: 1rem;">Muhammad Sameer Amjad</h1>
+                <h2>Computer Scientist | Full Stack Developer</h2>
+            </hgroup>
+        </header>
+
+        <div class="main">
+
+            <section>
+                <hgroup>
+                    <h3>Personal Information</h3>
+                </hgroup>
+
+                <div class="container">
+                    <div class="card">
+                        <img src="./assests/IMG_2024.jpg" alt="Profile Picture" style="width: 250px; height: 250px; object-fit: cover; object-position: 22% 22%;">
+                        <figcaption>This is me</figcaption>
+                    </div>
+                </div>            
+                <div>
+                    <ul style="display: flex; justify-content: center; list-style-type: disc;">
+                        <li>
+                            <b>Student of Computer Science @ NUST-SEECS.</b>
+                        </li>
+                        <li>
+                            <b>T3 Stack Developer</b>
+                        </li>
+                    </ul>
+                </div>
+                <aside>
+                    <p>The T3 Stack is a web development stack designed for simplicity, modularity, and full-stack type safety. It's a collection of tools that work together seamlessly to create efficient and robust web applications.
+
+                        <br><br>Here's a breakdown of the core components: <br>
+                        <div>
+                        <h3>1. Frontend:</h3>
+                        <ul>
+                            <li>
+                                <b>Next.js:</b> A popular React framework used for building performant and scalable web applications.
+                            </li>
+                            <li>
+                                <b>TypeScript:</b> A superset of JavaScript that adds optional static typing, improving code clarity and catching errors early in the development process.
+                            </li>
+                            <li>
+                                <b>Tailwind CSS:</b> A utility-first CSS framework offering rapid styling with pre-built classes.
+                            </li>
+                        </ul>
+                        <div style="display: flex; justify-content: space-around; align-items: center;">
+                        <img width="180px" src="./assests/nextjs.png" alt="NEXT.Js">
+                        <img width="180px" height="180px" src="./assests/typescript.svg" alt="TS">
+                        <img width="180px" src="./assests/tailwind.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>2. Backend (Optional, but often used):</h3>
+                        
+                        <ul>
+                            <li>
+                                <b>Prisma:</b> A powerful ORM (Object-Relational Mapper) that simplifies interacting with databases using TypeScript.
+                            </li>
+                            <li>
+                                <b>tRPC:</b> A type-safe RPC (Remote Procedure Call) framework for creating APIs with clear interfaces and error handling.
+                            </li>
+                            <li>
+                                <b>NextAuth.js:</b> An authentication solution for Next.js applications, providing features like social login and JWT authentication.
+                            </li>
+                        </ul>
+                        <div style="display: flex; justify-content: space-around; align-items: center;">
+                            <img width="180px" src="./assests/prisma.jpg" alt="prisma">
+                            <img width="180px" height="180px" src="./assests/tRPC.svg" alt="trpc">
+                            <img width="180px" src="./assests/nextAuth.png" alt="NextAuth">
+                        </div>
+                    </div>
+                        <h3>Benefits of the T3 Stack:</h3>
+                        
+                        <ul>
+                            <li>
+                                <b>Type Safety:</b> Reduces runtime errors and improves code maintainability.
+                            </li>
+                            <li>
+                                <b>Modularity:</b> Components are decoupled, making it easier to scale and reuse code.
+                            </li>
+                            <li>
+                                <b>Fast Development:</b> Tools like Next.js and Prisma streamline development processes.
+                            </li>
+                            <li>
+                                <b>Large Community:</b> Active community with resources and support readily available.
+                            </li>
+                        </ul>
+                        
+                        <h4>Who is it for?</h4>
+                        Developers who value type safety and modularity.
+                        Teams looking for a fast and efficient way to build web applications.
+                        Individuals seeking a structured approach to full-stack development.
+                    </p>
+                </aside>
+            </section>
+            <hr/>
+            <section>
+                <hgroup>
+                    <h3>Education</h3>
+                </hgroup>
+
+                <ol>
+                    <li>
+                        <h3>BS CS</h3>
+                        <p>National University of Sciences and Technology, H-12 Islamabad</p>
+                        <p>
+                            <h4>Core Focus:</h4>
+                            <ul>
+                                <li>
+                                    <b>Algorithms and Data Structures:</b> The fundamental building blocks of computer programs.
+                                </li>
+                                <li>
+                                    <b>Programming Languages:</b> Learning various languages like Python, Java, C++, and web development languages.
+                                </li>
+                                <li>
+                                    <b>Computer Architecture and Operating Systems:</b> Understanding how computers work at a hardware and software level.
+                                </li>
+                                <li>
+                                    <b>Networking and Database Systems:</b> Building and managing networks, and storing and retrieving data efficiently.
+                                </li>
+                                <li>
+                                    <b>Software Engineering:</b> Applying best practices for designing, developing, and maintaining software.
+                                </li>
+                            </ul>
+                            
+
+                        </p>
+                    </li>
+                    <li>
+                        <h3>ICS</h3>
+                        <p>Punjab Group of Colleges, Sargodha</p>
+                    </li>
+                </ol>
+            </section>
+
+            <section>
+                <hgroup>
+                    <h3>Who am I?</h3>
+                </hgroup>
+                <p>I live to eat, drink and play!</p>
+                <p>I like coding!!</p>
+            </section>
+
+            <hr/>
+         </div>
+        
+         
+         <!-- footer -->
+         <footer style="background-color: #240090; color: #fff; padding: 2rem; text-align: center;">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div style="flex-basis: 33.33%;">
+                    <!-- <img src="logo.png" alt="Logo" style="max-width: 100%;"> -->
+                    <article>
+                        <!-- Add an SVG -->
+                        <!-- You can skip this part. -->
+                        <svg width="200" height="200" viewBox="-100 -100 200 200">
+            <defs>
+            <path
+              id="branch"
+              d="
+                M 0 0 L 0 -90
+                M 0 -20 L 20 -34
+                M 0 -20 L -20 -34
+                M 0 -40 L 20 -54
+                M 0 -40 L -20 -54
+                M 0 -60 L 20 -74
+                M 0 -60 L -20 -74"
+              stroke="#E5C39C"
+              stroke-width="5"
+            />
+            </defs>
+            
+            <use href="#branch" />
+            <use href="#branch" transform="rotate(60)" />
+            <use href="#branch" transform="rotate(120)" />
+            <use href="#branch" transform="rotate(180)" />
+            <use href="#branch" transform="rotate(240)" />
+            <use href="#branch" transform="rotate(300)" />
+            </svg>
+                    </article>
+                </div>
+                <div style="flex-direction: column;">
+                <div style="flex-basis: 33.33%;">
+                    <ul style="list-style: none; display: flex; justify-content: center; justify-content: flex-end;">
+                        <li><a href="#" style="color: #fff; text-decoration: none; margin-right: 1rem;">Home</a></li>
+                        <li><a href="hobbies.html" style="color: #fff; text-decoration: none; margin-right: 1rem;">Hobbies</a></li>
+                        <li><a href="contact.html" style="color: #fff; text-decoration: none; margin-right: 1rem;">Contact</a></li>
+                        <li><a href="imageGallery.html" style="color: #fff; text-decoration: none; margin-right: 1rem;">Testimonials</a></li>
+                        <li><a href="skills.html" style="color: #fff; text-decoration: none; margin-right: 1rem;">Personal Skills</a></li>
+                    </ul>
+                </div>
+                <div style="flex-basis: 33.33%; align-items: center;">
+                    <ul style="list-style: none; display: flex; justify-content: center; justify-content: flex-start;">
+                        <li><h4>Links: </h4></li>
+                        <li><a target="_blank" href="https://www.facebook.com/sameer.amjad07" style="color: #fff; text-decoration: none; margin-right: 1rem;"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a target="_blank" href="https://twitter.com/sameeramjad_07" style="color: #fff; text-decoration: none; margin-right: 1rem;"><i class="fab fa-twitter"></i> X</a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/sameeramjad_07/" style="color: #fff; text-decoration: none; margin-right: 1rem;"><i class="fab fa-instagram">Instagram</i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/sameeramjad07/" style="color: #fff; text-decoration: none; margin-right: 1rem;"><i class="fab fa-linkedin">LinkedIn</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
